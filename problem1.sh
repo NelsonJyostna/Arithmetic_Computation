@@ -7,6 +7,9 @@ read -p "Enter a number :" b
 
 read -p "Enter a number :" c
 
+
+
 echo  "D = `expr $a + $b \* $c`"
 
 
+echo  "E = `expr $a \* $b + $c`"
