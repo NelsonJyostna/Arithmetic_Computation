@@ -30,3 +30,13 @@ Dict[2]="$E"
 Dict[3]="$F"
 Dict[4]="$G"
 
+
+
+counter=0
+
+for i in ${Dict[@]}
+do
+   Array[(counter++)]=$i
+done
+
+echo ${Array[@]}
