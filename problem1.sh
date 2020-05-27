@@ -39,4 +39,5 @@ do
    Array[(counter++)]=$i
 done
 
-echo ${Array[@]}
+
+printf '%s\n' "${Array[@]}" | sort -nr
