@@ -41,3 +41,7 @@ done
 
 
 printf '%s\n' "${Array[@]}" | sort -nr
+
+
+printf '%s\n' "${Array[@]}" | sort -n
+
