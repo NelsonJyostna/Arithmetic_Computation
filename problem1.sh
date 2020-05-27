@@ -1,4 +1,5 @@
-#! /bin/bash -x
+#!/bin/bash -x
+
 
 
 read -p "Enter a number :" a
@@ -9,15 +10,23 @@ read -p "Enter a number :" c
 
 
 
-echo  "D = `expr $a + $b \* $c`"
+D=`expr $a + $b \* $c`
 
 
-echo  "E = `expr $a \* $b + $c`"
+E=`expr $a \* $b + $c`
 
 
-echo  "F = `expr $c + $a / $b`"
+F=`expr $c + $a / $b`
 
 
-echo  "G = `expr $a % $b + $c`"
+G=`expr $a % $b + $c`
 
+
+declare -A Dict
+
+
+Dict[1]="$D"
+Dict[2]="$E"
+Dict[3]="$F"
+Dict[4]="$G"
 
