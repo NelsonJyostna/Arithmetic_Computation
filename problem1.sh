@@ -13,3 +13,8 @@ echo  "D = `expr $a + $b \* $c`"
 
 
 echo  "E = `expr $a \* $b + $c`"
+
+
+echo  "F = `expr $c + $a / $b`"
+
+
